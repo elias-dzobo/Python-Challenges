@@ -12,7 +12,7 @@ For example, to find all primes less than 100, we would first mark [4, 6, 8, ...
 def sieve(n):
 
     lst = list(range(2, n+1))
-    primes = []
+
     for i in lst:
         
         lst = [a for a in lst if a%i != 0 or a == i]
